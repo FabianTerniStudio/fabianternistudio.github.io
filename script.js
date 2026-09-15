@@ -1,6 +1,6 @@
-const nav = document.getElementById("nav")
+const rayas = document.getElementById("rayas")
 const menu = document.getElementById("menu")
-nav.addEventListener("click", () => {
+rayas.addEventListener("click", () => {
     menu.classList.toggle("visible")
     menu.classList.toggle("unvisible")
 })
