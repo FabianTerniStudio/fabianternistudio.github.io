@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(182, 162, 47);
+    margin: 0;
+}
+#titulo{
+    text-align: center;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    gap: 20px;
+    padding: 10px;
+}
+
+#nav img{
+    height: 60px;
+    width: auto;
+    border-radius: 30px;
+}
+#nav:has(+ #menu.visible) {
+    border-bottom: none;
+}
+
+#rayas{
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#rayas span{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#menu{
+    border-top: 2px solid black;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#menu li{
+    padding: 15px 0;
+}
+#menu.unvisible{
+    display: none;  
+}
+
+#menu li:not(:last-child){
+    border-bottom: 2px solid black;
+}
